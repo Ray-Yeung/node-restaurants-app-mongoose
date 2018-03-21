@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: oQuTZmT9YNaCTMEDoofk+O2gH1yI1lGYVVHjs0OgSd0Tymy3ssE8UYbfqraQTxC97MV/5sXY2kUYRFkvZk31gT3XRkD6oKJSMIaYozyAPOHII0kh/G/0L9+sXBGkRdE4Dqc167+aFq1AnNDMrnxmYu1lzsrhwV2QSuV5jmso/ytNcn/X4BYE8mg2wIIJZi7R1s0r1AB0Qq3OAzMknN2r2XzHaLxAGGYGHuy1LGp+lHuRHODVVwA/vJs3QQnMC4DUIykTadAo3B/gJREZEcHjtCSu/+am+j3zuUyVTPPhPv5+n+Ea5CtF6ybbPVO4kVrnCI1o5nR9s+pxQjEp+V3kC9PO3cEhEabY6aqFPEhYRTzMo5g7/uncUu3LEFGBJkNe9R3Wyam1jjpC2Kzr9pmr03omjoVoyor+8oyj5XCClB2q3W9vHlWvHN9T60jOSTGCVJ4/kZXlDgf8Ve0ZZzrI6nAGA8NLdH5GPm4yQpaFlrE5EPMuGhhmhLJZimfxBs55+Tq9JQ0iAI8ErQsFvjeohqIVb+zKA3bAVBPemfoV6ApKBs/HLFsxeH3LjZkgLe1xOvHfiX4y3UMUBcMxmmssei7UNqdfjT8CZ5GHC59SXSneurb2BAaGJMB8dJaDnpj+JPy8TyuBalZKRR3xHO+Y1VLfFQQENpcUzljxcVC8T+M=
+  app: infinite-journey-11060
+  on:
+    repo: Ray-Yeung/node-restaurants-app-mongoose
+    branch: feature/with-tests
